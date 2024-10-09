@@ -9,8 +9,20 @@ class Stack {
   void push(int element) {
       
   }
-  void pop() {
-      
+
+  int pop() {
+    if (v.size()==0)
+    {
+      return -1;
+    }
+    else {
+      int p = 0;
+      p = v[v.size()-1];
+      v.pop_back();
+      return p;
+    }
+    
+
   }
   
   int peek(){
@@ -19,7 +31,9 @@ class Stack {
   
 };
 
-int main() {
+int main() 
+{
+
 
 
     return 0;
