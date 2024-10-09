@@ -36,10 +36,19 @@ class Stack {
 
 int main() 
 {
+<<<<<<< Updated upstream
     
     
+=======
+  Stack testStack;
+
+  testStack.push(1);
+
+  assert(testStack.pop() == 1);
+  
+  cout <<"\nTests passed.";
+>>>>>>> Stashed changes
 
 
-
-    return 0;
+  return 0;
 }
