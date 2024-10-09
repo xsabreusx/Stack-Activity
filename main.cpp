@@ -2,13 +2,19 @@
 #include <cassert>
 #include <vector>
 using namespace std;
+
 class Stack {
   private:
   vector<int> v;
+  
   public:
+  
+  Stack(){}
+
   Stack(vector<int> v) {
       this->v = v;
   }
+
   void push(int element) {
       this->v.push_back(element);
   }
@@ -36,10 +42,8 @@ class Stack {
 
 int main() 
 {
-<<<<<<< Updated upstream
     
     
-=======
   Stack testStack;
 
   testStack.push(1);
@@ -47,7 +51,6 @@ int main()
   assert(testStack.pop() == 1);
   
   cout <<"\nTests passed.";
->>>>>>> Stashed changes
 
 
   return 0;
