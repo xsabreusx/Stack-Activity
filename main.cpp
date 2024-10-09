@@ -6,8 +6,11 @@ class Stack {
   private:
   vector<int> v;
   public:
+  Stack(vector<int> v) {
+      this->v = v;
+  }
   void push(int element) {
-      
+      this->v.push_back(element);
   }
 
   int pop() {
@@ -33,6 +36,8 @@ class Stack {
 
 int main() 
 {
+    
+    
 
 
 
